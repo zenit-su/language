@@ -1,0 +1,54 @@
+/* StoriesSection.module.css */
+
+.storiesSection {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.container {
+  /* Remove max-width and centering to allow full-width layout */
+  width: 100%;
+  padding: 0 20px; /* Optional: Add horizontal padding */
+  box-sizing: border-box;
+  text-align: left; /* Align text to the left */
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center; /* Keep the title centered if desired */
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  text-align: center; /* Keep the description centered if desired */
+}
+
+.storiesWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Align items to the left */
+  gap: 20px; /* Adjust the gap as needed */
+  overflow: hidden; /* Hide any overflowing content to remove scrollbar */
+}
+
+/* Optional: If overflow is necessary but you want to hide the scrollbar */
+
+/* For Webkit-based browsers (Chrome, Safari) */
+.storiesWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+.storiesWrapper {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* For Internet Explorer 10+ */
+.storiesWrapper {
+  -ms-overflow-style: none; /* IE 10+ */
+}

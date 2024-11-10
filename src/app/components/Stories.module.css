@@ -1,0 +1,59 @@
+/* Stories.module.css */
+
+.storiesSection {
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.scrollContainer {
+  display: flex;
+  align-items: center;
+}
+
+.scrollButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.storiesContainer {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  flex: 1;
+}
+
+.storyLink {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 10px;
+  flex: 0 0 auto;
+}
+
+.storyItem {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.storyItem:hover {
+  transform: scale(1.05);
+}
+
+.storyImage {
+  border-radius: 8px;
+}
+
+.storyTitle {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}

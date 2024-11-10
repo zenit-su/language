@@ -1,0 +1,86 @@
+/* src/components/Header.module.css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333333;
+  text-decoration: none;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #555555;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #000000;
+}
+
+.active {
+  color: #000000;
+  font-weight: bold;
+  border-bottom: 2px solid #000000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* src/components/Home.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+}
+
+.content {
+  flex: 1; /* Allow content to grow and fill available space */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 20px; /* Add padding as needed */
+}
+
+.textOverlay {
+  position: relative;
+  z-index: 1; /* Ensure text is above the background image if overlapping */
+  margin-bottom: 20px; /* Space between text and background image */
+}
+
+.textOverlay h1 {
+  font-size: 2.5rem;
+  color: #fff; /* Adjust color based on your background image */
+  text-align: center;
+}

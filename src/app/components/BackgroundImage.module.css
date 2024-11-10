@@ -1,0 +1,21 @@
+/* src/components/BackgroundImage.module.css */
+.backgroundImageContainer {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.backgroundImage {
+  z-index: -1;
+}
+
+.contentOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}

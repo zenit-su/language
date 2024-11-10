@@ -1,0 +1,34 @@
+/* styles/NavButton.module.css */
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: background-color 0.3s;
+  user-select: none;
+}
+
+.navButton:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.prevButton {
+  left: 15px;
+}
+
+.nextButton {
+  right: 15px;
+}
+
+@media (max-width: 768px) {
+  .navButton {
+    font-size: 1.5rem;
+    padding: 8px 12px;
+  }
+}

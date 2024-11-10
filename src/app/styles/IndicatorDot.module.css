@@ -1,0 +1,27 @@
+/* styles/IndicatorDot.module.css */
+
+.dot {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.activeDot {
+  background-color: #717171;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+@media (max-width: 768px) {
+  .dot {
+    height: 12px;
+    width: 12px;
+  }
+}
